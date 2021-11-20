@@ -24,35 +24,57 @@
     <!-- --------MAIN-------- -->
     <main>
       <!--Partie 1-->
-      <div class="part1projet">
+      <div class="part1">
+        <h2>Mes projets</h2>
         <div class="part1container">
-          <div class="part1img">
-            <img src="inc/img/matrice.png" alt="logo école" />
-          </div>
-          <div class="part1text">
-            <h3>Projet HTML/CSS</h3>
-            <p>Ecole Matrice</p>
-            <p>Maquette modèle : Matrice</p>
-            <p>Créateur du site web Ziyad Gargouri</p>
-            <p>Novembre 2021</p>
-          </div>
-          <div class="part1button">
-            <button
-              target="blank"
-              onclick="window.location.href = 'flour_shower/index.html';"
-            >
-              <strong>Voir</strong>
-            </button>
+          <div class="part1containerprojet">
+            <div class="part1projet">
+              <div class="part1img">
+                <img src="inc/img/matrice.png" alt="logo école" />
+              </div>
+              <div class="part1text">
+                <h3>Projet HTML/CSS</h3>
+                <p>Ecole Matrice</p>
+                <p>Maquette modèle : Matrice</p>
+                <p>Créateur du site web Ziyad Gargouri</p>
+                <p>Novembre 2021</p>
+              </div>
+              <div class="part1button">
+                <button
+                  target="blank"
+                  onclick="window.location.href = 'flour_shower/index.html';"
+                >
+                  <strong>Voir</strong>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <!--Partie 2-->
       <div class="part2container">
-        <a href="inc/docs/CV.pdf" download="CV.pdf">Téléchargez mon CV</a>
+        <h2>Mon CV</h2>
+        <div class="part2containerico">
+          <a href="inc/docs/CV.pdf" download="CV.pdf">
+            <img src="inc/img/download.png" alt="téléchargement icone" />
+          </a>
+        </div>
         <embed src="inc/docs/CV.pdf" type="application/pdf" />
+      </div>
+      <!--Partie 3-->
+      <div class="part3container">
+        <h2>Mon flux Linkedin</h2>
+        <iframe
+          src="https://www.linkedin.com/embed/feed/update/urn:li:share:6867888642287816706"
+          frameborder="0"
+          allowfullscreen=""
+          title="Post intégré"
+        ></iframe>
       </div>
     </main>
     <!-- --------FOOTER-------- -->
-    <footer></footer>
+    <footer>
+      <p>Copyright &copy; Ziyad Gargouri 2021</p>
+    </footer>
   </body>
 </html>
