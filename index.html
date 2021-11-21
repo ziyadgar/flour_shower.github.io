@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <link rel="shortcut icon" href="/inc/img/logo32x32.ico" />
+    <link rel="shortcut icon" href="inc/img/logo32x32.ico" />
     <link rel="stylesheet" type="text/css" href="inc/css/style.css" />
     <!--meta viewport permet d'activer les media query -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,10 +71,49 @@
           title="Post intégré"
         ></iframe>
       </div>
+      <!--Partie 4-->
+      <div class="part4container">
+        <h2>Salon de discution</h2>
+        <div class="part4discord">
+          <iframe
+            src="https://discord.com/widget?id=909894205084684298&theme=dark"
+            allowtransparency="true"
+            frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          ></iframe>
+        </div>
+      </div>
     </main>
     <!-- --------FOOTER-------- -->
     <footer>
       <p>Copyright &copy; Ziyad Gargouri 2021</p>
+      <!-- Messenger Plugin de discussion Code -->
+      <div id="fb-root"></div>
+      <!-- Your Plugin de discussion code -->
+      <div id="fb-customer-chat" class="fb-customerchat"></div>
+      <script>
+        var chatbox = document.getElementById("fb-customer-chat");
+        chatbox.setAttribute("page_id", "111383471366508");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: "v12.0",
+          });
+        };
+
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src =
+            "https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      </script>
     </footer>
   </body>
 </html>
